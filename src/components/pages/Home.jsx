@@ -10,7 +10,7 @@ import {
   
   export default function Home() {
     return (
-      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} id='home'>
         <Flex p={8} flex={1} align={'center'} justify={'center'} mt={[36,0]} >
           <Stack spacing={6} w={'full'} maxW={'lg'} >
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -61,5 +61,8 @@ import {
           />
         </Flex>
       </Stack>
+
+
+      
     );
   }

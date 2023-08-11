@@ -13,10 +13,11 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher'; // Import the ColorModeSwitcher component
 
-const Links = ['Dashboard', 'Projects', 'Contact', 'Achievements', 'Hobbies'];
+const Links = ['Home', 'Projects', 'Certifications', 'About', 'Contact'];
 
 const NavLink = ({ children }) => (
   <Link
+    href={'#'+children.toLowerCase()}
     px={1}
     py={2}
     height="40px" // Set a specific height for NavLink
@@ -27,7 +28,7 @@ const NavLink = ({ children }) => (
       textDecoration: 'none',
       color: 'blue.600',
     }}
-    href="#"
+    
   >
     {children}
   </Link>
@@ -50,7 +51,7 @@ function Header() {
           ))}
         </HStack>
         <Flex alignItems="center">
-          <ColorModeSwitcher /> {/* Add the ColorModeSwitcher component here */}
+          <ColorModeSwitcher /> 
           <Menu>
             <MenuButton
               as={Button}

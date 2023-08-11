@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
+import { BrowserRouter } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Dashboard from './components/Dashboard';
 import { ChakraProvider } from '@chakra-ui/react';
+
 
 const App = () => {
   return (
@@ -12,12 +13,10 @@ const App = () => {
     <ChakraProvider>
       <BrowserRouter>
         <Header/>
-        <Routes>
-          
-          <Route path='/' element={<Home/>}/>
-        </Routes>
+        <Dashboard/>
         <Footer/>
       </BrowserRouter>
+      
     </ChakraProvider>
     </>
   )
