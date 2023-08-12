@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+.about-me-icon {
+  position: relative;
+  width: 813.33px;
+  height: 996px;
+  object-fit: cover;
+}
+.about1 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.about-me2 {
+  position: relative;
+  font-size: 64px;
+  line-height: 120%;
+  text-align: left;
+}
+.about-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.67px;
+}
+.blank-line {
+  margin: 0;
+}
+.lorem-ipsum-dolor-container {
+  position: relative;
+  font-size: 24px;
+  line-height: 150%;
+  color: #1c1e53;
+  text-align: left;
+  display: inline-block;
+  width: 821.33px;
+}
+.about,
+.frame-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.about {
+  position: absolute;
+  top: 2022.67px;
+  left: 0;
+  flex-direction: row;
+  padding: 133.33334350585938px 85.33333587646484px;
+  align-items: center;
+  gap: 114.67px;
+  text-align: center;
+  font-size: 21.33px;
+  color: #282938;
+  font-family: Roboto;
+}

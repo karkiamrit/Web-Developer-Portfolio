@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Divider, CardBody, Heading, ButtonGroup, CardFooter, Stack, Button, Text } from '@chakra-ui/react';
+import { Card, Box, Image, Divider, CardBody, Heading, ButtonGroup, CardFooter, Stack, Button, Text } from '@chakra-ui/react';
 
 
 function Project(props) {
@@ -8,8 +8,8 @@ function Project(props) {
         window.location.href=githublink
     }
     return (
-        <div>
-            <Card maxW='sm' float={'left'} mt={100} ml={79} mr={19} mb={100}>
+        <Box >
+            <Card maxW='sm' float={'left'} mt={50} >
                 <CardBody>
                     <Image
                         src={props.image}
@@ -39,7 +39,7 @@ function Project(props) {
                     </ButtonGroup>
                 </CardFooter>
             </Card>
-        </div>
+        </Box>
     )
 }
 
