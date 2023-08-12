@@ -52,7 +52,7 @@ import {
             </Stack>
           </Stack>
         </Flex>
-        <Flex flex={1.03} pt={20}>
+        <Flex flex={1.03} pt={19}>
           <Image
             alt={'Login Image'}
             objectFit={'cover'}

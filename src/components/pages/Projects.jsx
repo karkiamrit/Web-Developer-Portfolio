@@ -4,9 +4,10 @@ import { Grid,Heading,Box } from '@chakra-ui/react';
 
 function Projects() {
     return (
-        <Box id='projects'>
+        <Box id='projects' align="center" justify="center">
             <Heading
               pt={50}
+              ml={8}
               color={'blue.400'}
               fontSize={{
                 base: '4xl',

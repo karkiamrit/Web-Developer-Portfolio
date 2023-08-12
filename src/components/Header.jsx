@@ -10,6 +10,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher'; // Import the ColorModeSwitcher component
 
@@ -36,7 +37,7 @@ const NavLink = ({ children }) => (
 
 function Header() {
   return (
-    <Box px={4} py={3} color="white" boxShadow="md" position="fixed" top={0} left={0} right={0} zIndex={999}>
+    <Box px={4} py={3} color="white" boxShadow="md" position="fixed" top={0} left={0} right={0} zIndex={999} bg={useColorModeValue('gray.50', 'gray.900')} >
       <Flex maxW="1200px" mx="auto" alignItems="center" justifyContent="space-between">
         <Avatar
           size="sm"

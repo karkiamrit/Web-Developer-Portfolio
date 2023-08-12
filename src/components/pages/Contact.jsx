@@ -38,7 +38,7 @@ export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
 
   return (
-    <Flex
+    <Flex 
       bg={useColorModeValue('gray.100', 'gray.900')}
       align="center"
       justify="center"
@@ -50,16 +50,19 @@ export default function ContactFormWithSocialButtons() {
       <Box borderRadius="lg" m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
-            <Heading
+            <Heading 
+              mt={-12}
+              ml={8}
               color={'blue.400'}
               fontSize={{
                 base: '4xl',
                 md: '5xl',
               }}>
-              Get in Touch
+              Contact Me
             </Heading>
 
             <Stack
+              mt={-10}
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}>
               <Stack
@@ -130,6 +133,8 @@ export default function ContactFormWithSocialButtons() {
               </Stack>
 
               <Box
+                mr={[0,20]}
+                width={['auto',400]}
                 bg={useColorModeValue('white', 'gray.700')}
                 borderRadius="lg"
                 p={8}

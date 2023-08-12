@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Box, Image, Divider, CardBody, Heading, ButtonGroup, CardFooter, Stack, Button, Text } from '@chakra-ui/react';
+import { Card, Box, Image, Divider, CardBody, Heading, CardFooter, Stack, Button, Text } from '@chakra-ui/react';
 
 
 function Project(props) {
@@ -25,8 +25,8 @@ function Project(props) {
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                    <ButtonGroup spacing='2' >
                         <Button onClick={reroute}
+                            ml={'31%'}
                             rounded={'full'}
                             bg={'blue.400'}
                             color={'white'}
@@ -36,7 +36,7 @@ function Project(props) {
                             View in Github
                         </Button>
 
-                    </ButtonGroup>
+            
                 </CardFooter>
             </Card>
         </Box>
